@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,11 +9,12 @@
     <link rel="preload" href="fonts/arialregular.woff2" as="font">
     <link rel="preload" href="fonts/arialbold.woff2" as="font">
 </head>
+
 <body>
     <header class="header">
         <nav class="header__nav">
             <a class="header__logo" href="#">
-                <img class="header__logo-img" src="" alt="Логотип компании BisLite" width="133" height="38">
+                <img class="header__logo-img" src="img/Logo.png" alt="Logo BisLite" width="133" height="38">
             </a>
 
             <ul class="header__list site-nav">
@@ -25,8 +27,19 @@
                 <li class="site-nav__item">
                     <a class="site-nav__link" href="services.html">services</a>
                 </li>
-                <li class="site-nav__item">
-                    <a class="site-nav__link" href="portfolio.html">portfolio</a>
+                <li class="site-nav__item portfolio-inner">
+                    portfolio
+                    <ul class="portfolio-inner__list">
+                        <li class="portfolio-inner__item">
+                            <a class="portfolio-inner__link" href="#">page</a>
+                        </li>
+                        <li class="portfolio-inner__item">
+                            <a class="portfolio-inner__link" href="#">page</a>
+                        </li>
+                        <li class="portfolio-inner__item">
+                            <a class="portfolio-inner__link" href="#">page</a>
+                        </li>
+                    </ul>
                 </li>
                 <li class="site-nav__item">
                     <a class="site-nav__link" href="blog.html">blog</a>
@@ -34,31 +47,19 @@
                 <li class="site-nav__item">
                     <a class="site-nav__link" href="contact-us.html">contact us</a>
                 </li>
-                <li class="site-nav__item">
-                    <ul class="header__list-inner">
-                        <li class="header__item-inner">
-                            <a class="header__link-inner" href="#">page</a>
-                        </li>
-                        <li class="header__item-inner">
-                            <a class="header__link-inner" href="#">page</a>
-                        </li>
-                        <li class="header__item-inner">
-                            <a class="header__link-inner" href="#">page</a>
-                        </li>
-                    </ul>
-                </li>
             </ul>
         </nav>
     </header>
 
     <main>
         <h1 class="visually-hidden">contacts us</h1>
-        <section>
-            <div>
-                <h2>contact us</h2>
-                <p>Thank you for stopping by. Please use the form below to contact us and will get back to you at the earliest possible</p>
-                <p>For feedback or questions, please email us at: <span>email@bislite.com</span></p>
-                <form action="#" method="post">
+        <section class="contact">
+            <div class="form-wrapper form">
+                <h2 class="form__title">contact us</h2>
+                <p class="form__desc">Thank you for stopping by. Please use the form below to contact us and will get
+                    back to you at the earliest possible</p>
+                <p class="form__email">For feedback or questions, please email us at: <span>email@bislite.com</span></p>
+                <form class="form__block" action="#" method="post">
                     <label for="name-field">Name</label>
                     <input type="text" name="name" id="name-field">
                     <label for="email-field">Email Address</label>
@@ -71,17 +72,18 @@
                 </form>
             </div>
 
-            <div>
-                <p>We are here</p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15961.786145768661!2d30.191047300000005!3d59.99479129999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1579366776583!5m2!1sru!2sru" width="300" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-                <div class="footer__contacts"> <!-- Адрес под картой -->
-                    <h2 class="footer__contacts-title">contact us</h2>
-                    <p class="footer__contacts-adress">BisLite Inc.
-                    Always Street 265
-                    0X - 125 - Canada
+            <div class="map-wrapper map">
+                <p class="map__desc">We are here</p>
+                <iframe class="map__block" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15961.786145768661!2d30.191047300000005!3d59.99479129999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1579366776583!5m2!1sru!2sru" width="300" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                <div class="map__contacts">
+                    <!-- Адрес под картой -->
+                    <h2 class="map__contacts-title">contact us</h2>
+                    <p class="map__contacts-adress"><span>BisLite Inc.</span>
+                        Always Street 265
+                        0X - 125 - Canada
                     </p>
-                    <p class="footer__contacts-phone">Phone: 987-6543-210
-                    Fax: 987-6543-210
+                    <p class="map__contacts-phone">Phone: 987-6543-210
+                        Fax: 987-6543-210
                     </p>
                 </div>
             </div>
@@ -91,19 +93,19 @@
     <footer class="footer">
         <div class="footer__nav">
             <div class="footer__about">
-                <h3 class="footer__about-title">about us</h3>
-                <p class="footer__about-subtitle">Lorem ipsum dolor sit amet, 
-                    consectetur adipiscing elit. Morbi euismod 
-                    placerat dui et tincidunt. Sed sollicitudin 
-                    posuere auctor. Phasellus at ultricies nisl. 
-                    Integer at leo eros. Ut nec lorem id orci 
-                    convallis porta. Donec pharetra neque eu velit 
+                <h2 class="footer__about-title">about us</h2>
+                <p class="footer__about-subtitle">Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit. Morbi euismod
+                    placerat dui et tincidunt. Sed sollicitudin
+                    posuere auctor. Phasellus at ultricies nisl.
+                    Integer at leo eros. Ut nec lorem id orci
+                    convallis porta. Donec pharetra neque eu velit
                     dictum molestie.
                 </p>
             </div>
-    
+
             <div class="footer__explore">
-                <h3 class="footer__explore-title">explore</h3>
+                <h2 class="footer__explore-title">explore</h2>
                 <ul class="footer__explore-list">
                     <li class="footer__explore-item">
                         <a class="footer__explore-link" href="home.html">Home</a>
@@ -122,9 +124,9 @@
                     </li>
                 </ul>
             </div>
-    
+
             <div class="footer__browse">
-                <h3 class="footer__browse-title">browse</h3>
+                <h2 class="footer__browse-title">browse</h2>
                 <ul class="footer__browse-list">
                     <li class="footer__browse-item">
                         <a class="footer__browse-link" href="#">Careers</a>
@@ -143,10 +145,10 @@
                     </li>
                 </ul>
             </div>
-    
+
             <div class="footer__contacts">
-                <h3 class="footer__contacts-title">contact us</h3>
-                <p class="footer__contacts-adress">BisLite Inc.
+                <h2 class="footer__contacts-title">contact us</h2>
+                <p class="footer__contacts-adress"><span>BisLite Inc.</span>
                     Always Street 265
                     0X - 125 - Canada
                 </p>
@@ -154,38 +156,52 @@
                     Fax: 987-6543-210
                 </p>
             </div>
-    
+
             <div class="footer__social">
-                <h3 class="footer__social-title">connect with us</h3>
+                <h2 class="footer__social-title">connect with us</h2>
                 <ul class="footer__social-list">
                     <li class="footer__social-item">
-                        <img class="footer__social-img" src="img/social/facebook.png" alt="facebook" width="46" height="46">
+                        <a href="#">
+                            <span class="visually-hidden">Мы в фейсбуке</span>
+                        </a>
                     </li>
                     <li class="footer__social-item">
-                        <img class="footer__social-img" src="img/social/dribbble.png" alt="dribbble" width="46" height="46">
+                        <a href="#">
+                            <span class="visually-hidden">Мы в Дриббл</span>
+                        </a>
                     </li>
                     <li class="footer__social-item">
-                        <img class="footer__social-img" src="img/social/pinterest.png" alt="pinterest" width="46" height="46">
+                        <a href="#">
+                            <span class="visually-hidden">Мы в пинтерест</span>
+                        </a>
                     </li>
                     <li class="footer__social-item">
-                        <img class="footer__social-img" src="img/social/linkedin.png" alt="linkedin" width="46" height="46">
+                        <a href="#">
+                            <span class="visually-hidden">Мы в линк</span>
+                        </a>
                     </li>
                     <li class="footer__social-item">
-                        <img class="footer__social-img" src="img/social/skype.png" alt="skype" width="46" height="46">
+                        <a href="#">
+                            <span class="visually-hidden">Мы в скайпе</span>
+                        </a>
                     </li>
                     <li class="footer__social-item">
-                        <img class="footer__social-img" src="img/social/share.png" alt="share" width="46" height="46">
+                        <a href="#">
+                            <span class="visually-hidden">Поделиться</span>
+                        </a>
                     </li>
                 </ul>
             </div>
         </div>
 
         <div class="footer__copy">
-            <p class="footer__copy-copyright">© Copyright 2012 - BisLite Inc. All rights reserved. Some free icons used here are created by Brankic1979.com. 
-                Client Logos are copyright and trademark of the respective owners / companies. 
+            <p class="footer__copy-copyright">© Copyright 2012 - BisLite Inc. All rights reserved. Some free icons used
+                here are created by Brankic1979.com.
+                Client Logos are copyright and trademark of the respective owners / companies.
             </p>
-            <img class="footer__copy-img" src="img/Logo.png" alt="Logo" width="133" height="38">
+            <img class="footer__copy-logo" src="img/logo.png" alt="Logo" width="133" height="38">
         </div>
     </footer>
 </body>
+
 </html>
