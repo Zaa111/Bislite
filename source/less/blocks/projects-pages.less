@@ -1,0 +1,83 @@
+.pagination {
+    list-style: none;
+
+    display: flex;
+    justify-content: center;
+
+    padding-left: 0;
+    // padding-top: 10px;
+    // padding-bottom: 10px;
+    &__item {
+        padding: 5px 10px;
+
+
+        &:hover {
+            background-color: @select-color;
+        }
+    }
+}
+
+.pagination__link {
+    font-size: @s-font-size;
+    font-weight: @s-font-weight;
+    color: @text-color;
+}
+
+// ARROWS
+
+.pagination__item-next {
+    background-color: @first-color;
+    padding: 0;
+    margin-right: 10px;
+    width: 32px;
+
+    position: relative;
+
+    &::after {
+        content: "";
+        display: block;
+        width: 8px;
+        height: 8px;
+        border-top: 2px solid @text-color;
+        border-right: 2px solid @text-color;
+
+        position: absolute;
+        bottom: 10px;
+        left: 9px;
+
+        transform: rotate(45deg);
+    }
+
+    &:hover {
+        background-color: #97999c;
+    }
+}
+
+// HOW SHOULD I DO PARASHU ETU
+.pagination__item-end {
+    background-color: @first-color;
+    padding: 0;
+    width: 32px;
+
+    position: relative;
+
+    &::before {
+        content: "";
+
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    &:hover {
+        background-color: #97999c;
+    }
+}
+
+.pagination__end {
+    font-size: 8px;
+}
+
+.pagination__next {
+    font-size: 8px;
+}

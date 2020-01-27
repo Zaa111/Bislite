@@ -1,0 +1,36 @@
+.portfolio__title {
+    font-size: @m-font-size;
+    font-weight: @b-font-weight;
+    text-transform: uppercase;
+
+    // &::before {
+    //     content: "";
+    //     background-image: url(../../img/brush.png);
+    // }
+}
+
+.portfolio__nav-list {
+    list-style: none;
+
+    display: flex;
+    padding-left: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    border-top: 1px solid @first-color;
+    border-bottom: 1px solid @first-color;
+}
+
+.portfolio__nav-item {
+    padding: 5px 10px;
+
+    &:hover {
+        background-color: @select-color;
+    }
+}
+
+.portfolio__nav-link {
+    font-size: @s-font-size;
+    font-weight: @s-font-weight;
+    color: @text-color;
+}

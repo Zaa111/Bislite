@@ -1,0 +1,26 @@
+.projects {
+    list-style: none;
+    padding: 0;
+
+    border-bottom: 1px solid @first-color;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.projects__item {
+    margin-bottom: 40px;
+}
+
+.projects__img {
+    width: 220px;
+    height: 160px;
+    cursor: pointer;
+
+    transition: transform .2s linear;
+
+    &:hover {
+        transform: translate3d(-10px, -10px, 0);
+    }
+}

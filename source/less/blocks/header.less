@@ -1,10 +1,32 @@
 .header__nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+
+    padding-top: 30px;
 }
 
 .header__list {
     display: flex;
 
     list-style: none;
+    padding-left: 0;
+}
+
+.site-nav__link {
+    font-size: @s-font-size;
+    font-weight: @b-font-weight;
+    color: @text-color;
+    text-transform: uppercase;
+
+    margin-left: 50px;
+}
+
+.portfolio-inner__list {
+    list-style: none;
+    display: none;
+}
+
+.portfolio-inner:hover .portfolio-inner__list {
+    display: block;
 }
