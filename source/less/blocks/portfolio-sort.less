@@ -3,10 +3,24 @@
     font-weight: @b-font-weight;
     text-transform: uppercase;
 
-    // &::before {
-    //     content: "";
-    //     background-image: url(../../img/brush.png);
-    // }
+    padding-left: 40px;
+
+    position: relative;
+
+    &::before {
+        content: "";
+        background-image: url(../../img/brush.png);
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        width: 30px;
+        height: 30px;
+        top: -5px;
+        left: 0;
+        
+        position: absolute;
+
+        z-index: 10;
+    }
 }
 
 .portfolio__nav-list {

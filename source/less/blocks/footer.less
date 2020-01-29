@@ -1,6 +1,6 @@
 .footer {
     color: @footer-text-color;
-    a {
+    a:not(.social-desc) {
         color: @footer-text-color;
         font-size: @s-font-size;
         font-weight: @s-font-weight;
@@ -123,6 +123,107 @@
 
     margin-top: 0;
 }
+
+.social--facebook {
+    position: relative;
+    &::before {
+        content: "";
+        background-image: url(../../img/social/facebook.png);
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        width: 55px;
+        height: 50px;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+.social--dreeble {
+    position: relative;
+    &::before {
+        content: "";
+        background-image: url(../../img/social/dribbble.png);
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        width: 55px;
+        height: 50px;
+
+        position: absolute;
+        top: 0;
+        left: 15px;
+    }
+}
+
+.social--pinterest {
+    position: relative;
+    &::before {
+        content: "";
+        background-image: url(../../img/social/pinterest.png);
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        width: 55px;
+        height: 50px;
+
+        position: absolute;
+        top: 0;
+        right: -33px;
+    }
+}
+
+.social--link {
+    position: relative;
+    &::before {
+        content: "";
+        background-image: url(../../img/social/linkedin.png);
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        width: 55px;
+        height: 50px;
+
+        position: absolute;
+        top: 45px;
+        left: 0;
+    }
+}
+
+.social--skype {
+    position: relative;
+    &::before {
+        content: "";
+        background-image: url(../../img/social/skype.png);
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        width: 55px;
+        height: 50px;
+
+        position: absolute;
+        top: 45px;
+        left: 35px;
+    }
+}
+
+.social--share {
+    position: relative;
+    &::before {
+        content: "";
+        background-image: url(../../img/social/share.png);
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        width: 55px;
+        height: 50px;
+
+        position: absolute;
+        top: 45px;
+        right: -70px;
+    }
+}
+
+.social-desc {
+    font-size: 9px;
+}
+
 
 // COPYRIGHT
 
