@@ -87,7 +87,8 @@
     background-color: @first-color;
     width: 100px;
 
-    display: none;
+    opacity: 0;
+    transition: opacity .2s linear;
 }
 
 .portfolio-inner__item {
@@ -104,7 +105,7 @@
 .site-nav__item {
     &:hover {
         .portfolio-inner__list {
-            display: block;
+            opacity: 1;
         }
     }
 }
