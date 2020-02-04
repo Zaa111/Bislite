@@ -1,0 +1,109 @@
+.contact__flex-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+
+.form__title {
+    font-size: @m-font-size;
+    font-weight: @b-font-weight;
+    text-transform: uppercase;
+
+    padding-left: 40px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid @first-color;
+
+    position: relative;
+
+    &::before {
+        content: "";
+        background-image: url(../../img/email.png);
+        background-position: 3px 6px;
+        background-repeat: no-repeat;
+        width: 30px;
+        height: 30px;
+        top: -5px;
+        left: 0;
+        
+        position: absolute;
+
+        z-index: 15;
+    }
+}
+
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__block {
+    display: flex;
+    flex-direction: column;
+
+    label {
+        margin-top: 15px;
+        margin-bottom: 3px;
+
+        font-size: @s-font-size;
+        font-weight: @s-font-weight;
+        color: @text-color;
+    }
+}
+
+.form__desc {
+    max-width: 575px;
+    margin-bottom: 0;
+
+    font-size: @s-font-size;
+    font-weight: @s-font-weight;
+    color: @text-color;
+}
+
+.form__email {
+    font-size: @s-font-size;
+    font-weight: @s-font-weight;
+    color: @text-color;
+
+    span {
+        color: #2aacc8;
+        cursor: pointer;
+    }
+}
+
+.button-contacts-page {
+    font-size: @m-font-size;
+    font-weight: @b-font-weight;
+    color: @text-color;
+    text-transform: uppercase;
+    
+    align-self: flex-start; 
+    min-width: 160px;
+    min-height: 60px;
+    margin-top: 20px;
+    padding: 0 0 0 35px;
+
+    background: linear-gradient(to bottom, #7fe3ec 5%, #39b5ce 100%);
+    box-shadow: inset 0px 1px 0px #94f7ff;
+    border: solid 1px #2aacc8;
+    border-radius: 8px;
+    box-shadow: 0 3px 4px #d2d2d2;
+
+    position: relative;
+
+    cursor: pointer;
+
+    &::before {
+        content: "";
+        background-image: url(../../img/btn-arrow.png);
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        width: 25px;
+        height: 25px;
+        top: 16px;
+        left: 25px;
+
+        display: block;
+        position: absolute;
+        z-index: 200;
+    }
+}

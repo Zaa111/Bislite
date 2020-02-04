@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>BisLite</title>
+    <title>Contact Us</title>
     <link rel="preload" href="fonts/arialregular.woff2" as="font">
     <link rel="preload" href="fonts/arialbold.woff2" as="font">
     <link rel="stylesheet" href="css/style.min.css">
@@ -16,7 +16,7 @@
         <div class="header__wrapper">
             <div class="container">
                 <nav class="header__nav">
-                    <a class="header__logo" href="#">
+                    <a class="header__logo" href="index.html">
                         <img class="header__logo-img" src="img/Logo.png" alt="Логотип компании BisLite" width="133"
                             height="38">
                     </a>
@@ -49,116 +49,57 @@
                             <a class="site-nav__link" href="blog.html">blog</a>
                         </li>
                         <li class="site-nav__item">
-                            <a class="site-nav__link" href="contacts-page.html">contact us</a>
+                            <a class="site-nav__link" href="contacts.html">contact us</a>
                         </li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
-    
+
     <main>
-        <h1 class="visually-hidden">Portfolio Page</h1>
-        <section class="portfolio container">
-            <h2 class="portfolio__title">Portfolio</h2>
-            <ul class="portfolio__nav-list">
-                <li class="portfolio__nav-item">
-                    <a class="portfolio__nav-link" href="">All</a>
-                </li>
-                <li class="portfolio__nav-item">
-                    <a class="portfolio__nav-link" href="">Websites</a>
-                </li>
-                <li class="portfolio__nav-item">
-                    <a class="portfolio__nav-link" href="">Wordpress</a>
-                </li>
-                <li class="portfolio__nav-item">
-                    <a class="portfolio__nav-link" href="">Mobile Apps</a>
-                </li>
-                <li class="portfolio__nav-item">
-                    <a class="portfolio__nav-link" href="">Icons</a>
-                </li>
-                <li class="portfolio__nav-item">
-                    <a class="portfolio__nav-link" href="">Logos</a>
-                </li>
-                <li class="portfolio__nav-item">
-                    <a class="portfolio__nav-link" href="">Graphics</a>
-                </li>
-            </ul>
+        <h1 class="visually-hidden">contacts us</h1>
+        <section class="contact container">
+            <h2 class="form__title">contact us</h2>
+            <div class="contact__flex-wrapper">
+                <div class="form-wrapper form">
+                    <p class="form__desc">Thank you for stopping by. Please use the form below to contact us and will
+                        get
+                        back to you at the earliest possible</p>
+                    <p class="form__email">For feedback or questions, please email us at: <span>email@bislite.com</span>
+                    </p>
+                    <form class="form__block" action="#" method="post">
+                        <label for="name-field">Name</label>
+                        <input type="text" name="name" id="name-field">
+                        <label for="email-field">Email Address</label>
+                        <input type="text" name="email" id="email-field">
+                        <label for="subject-field">Subject</label>
+                        <input type="text" name="subject" id="subject-field">
+                        <label for="description-field">Description</label>
+                        <textarea name="description" id="description-field" rows="10"></textarea>
+                        <button class="button-contacts-page" type="submit">submit</button> <!-- Кнопка -->
+                    </form>
+                </div>
 
-            <ul class="projects__list projects">
-                <li class="projects__item">
-                    <img class="projects__img" src="img/potfolio-items/1.png" alt="" width="220" height="160">
-                </li>
-                <li class="projects__item">
-                    <img class="projects__img" src="img/potfolio-items/2.png" alt="" width="220" height="160">
-                </li>
-                <li class="projects__item">
-                    <img class="projects__img" src="img/potfolio-items/3.png" alt="" width="220" height="160">
-                </li>
-                <li class="projects__item">
-                    <img class="projects__img" src="img/potfolio-items/4.png" alt="" width="220" height="160">
-                </li>
-                <li class="projects__item">
-                    <img class="projects__img" src="img/potfolio-items/5.png" alt="" width="220" height="160">
-                </li>
-                <li class="projects__item">
-                    <img class="projects__img" src="img/potfolio-items/6.png" alt="" width="220" height="160">
-                </li>
-                <li class="projects__item">
-                    <img class="projects__img" src="img/potfolio-items/7.png" alt="" width="220" height="160">
-                </li>
-                <li class="projects__item">
-                    <img class="projects__img" src="img/potfolio-items/8.png" alt="" width="220" height="160">
-                </li>
-                <li class="projects__item">
-                    <img class="projects__img" src="img/potfolio-items/9.png" alt="" width="220" height="160">
-                </li>
-                <li class="projects__item">
-                    <img class="projects__img" src="img/potfolio-items/10.png" alt="" width="220" height="160">
-                </li>
-                <li class="projects__item">
-                    <img class="projects__img" src="img/potfolio-items/11.png" alt="" width="220" height="160">
-                </li>
-                <li class="projects__item">
-                    <img class="projects__img" src="img/potfolio-items/12.png" alt="" width="220" height="160">
-                </li>
-                <li class="projects__item">
-                    <img class="projects__img" src="img/potfolio-items/13.png" alt="" width="220" height="160">
-                </li>
-                <li class="projects__item">
-                    <img class="projects__img" src="img/potfolio-items/14.png" alt="" width="220" height="160">
-                </li>
-                <li class="projects__item">
-                    <img class="projects__img" src="img/potfolio-items/15.png" alt="" width="220" height="160">
-                </li>
-                <li class="projects__item">
-                    <img class="projects__img" src="img/potfolio-items/16.png" alt="" width="220" height="160">
-                </li>
-            </ul>
+                <div class="map-wrapper map">
+                    <div class="map__background">
+                        <p class="map__desc">We are here</p>
+                        <iframe class="map__block" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7981.9776314002775!2d30.2048231255452!3d59.9902949043792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1580841492748!5m2!1sru!2sru" width="290" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    </div>
 
-            <ul class="pages__list pagination">
-                <li class="pagination__item">
-                    <a class="pagination__link" href="#">1</a>
-                </li>
-                <li class="pagination__item">
-                    <a class="pagination__link" href="#">2</a>
-                </li>
-                <li class="pagination__item">
-                    <a class="pagination__link" href="#">3</a>
-                </li>
-                <li class="pagination__item">
-                    <a class="pagination__link" href="#">4</a>
-                </li>
-                <li class="pagination__item">
-                    <a class="pagination__link" href="#">5</a>
-                </li>
-                <li class="pagination__item pagination__item-next">
-                    <a class="pagination__link pagination__next" href="#"><span class="visually-hidden">Вперед</span></a>
-                </li>
-                <li class="pagination__item pagination__item-end">
-                    <a class="pagination__link pagination__end" href="#"><span class="visually-hidden">В конец</span></a>
-                </li>
-            </ul>
+                    <div class="map__contacts">
+                        <!-- Адрес под картой -->
+                        <h2 class="map__contacts-title">office address</h2>
+                        <p class="map__contacts-address"><span>BisLite Inc.</span>
+                            Always Street 265
+                            0X - 125 - Canada
+                        </p>
+                        <p class="map__contacts-phone">Phone: 987-6543-210
+                            Fax: 987-6543-210
+                        </p>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
@@ -176,7 +117,7 @@
                         dictum molestie.
                     </p>
                 </div>
-    
+
                 <div class="footer__explore">
                     <h2 class="footer__explore-title">explore</h2>
                     <ul class="footer__explore-list">
@@ -197,7 +138,7 @@
                         </li>
                     </ul>
                 </div>
-    
+
                 <div class="footer__browse">
                     <h2 class="footer__browse-title">browse</h2>
                     <ul class="footer__browse-list">
@@ -218,7 +159,7 @@
                         </li>
                     </ul>
                 </div>
-    
+
                 <div class="footer__contacts">
                     <h2 class="footer__contacts-title">contact us</h2>
                     <p class="footer__contacts-adress"><span>BisLite Inc.</span>
@@ -229,7 +170,7 @@
                         Fax: 987-6543-210
                     </p>
                 </div>
-    
+
                 <div class="footer__social">
                     <h2 class="footer__social-title">connect with us</h2>
                     <ul class="footer__social-list">
@@ -266,15 +207,16 @@
                     </ul>
                 </div>
             </div>
-    
+
             <div class="footer__copy container">
-                <p class="footer__copy-copyright">© Copyright 2012 - BisLite Inc. All rights reserved. Some free icons used
+                <p class="footer__copy-copyright">© Copyright 2012 - BisLite Inc. All rights reserved. Some free icons
+                    used
                     here are created by Brankic1979.com.
                     Client Logos are copyright and trademark of the respective owners / companies.
                 </p>
                 <img class="footer__copy-logo" src="img/logo.png" alt="Logo" width="133" height="38">
             </div>
-        </div> 
+        </div>
     </footer>
 </body>
 
